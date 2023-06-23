@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>الصفحة الرئيسية</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+
+      @import url('https://fonts.googleapis.com/css2?family=Droid+Arabic+Naskh:wght@400;700&display=swap');
+      
+      body {
+        font-family: 'Droid Arabic Naskh', sans-serif;
+      }
+      
+      .announcement {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .announcement h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .announcement p {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+ 
+</style>
+<script>
+function showResultsImage() {
+  // Hide the existing content
+
+  document.getElementById("photoGrid").style.display = "none";
+  
+  // Show the new image
+  var resultsImage = document.getElementById("resultsImage");
+  resultsImage.style.display = "block";
+}
+function showHomePage() {
+  // Hide the resultsImage and show the pageContent
+  document.getElementById("resultsImage").style.display = "none";
+  document.getElementById("photoGrid").style.display = "block";
+}
+</script>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" >
+  <h1 style:"font-family:Amiri "> الثانوية الإعدادية عبد العزيز أمين سلا</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="#" class="w3-bar-item w3-button w3-hide-small" onclick="showResultsImage()">النتائج</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="showHomePage()">الصفحة الرئيسية</a>
+    </div>
+    <div class="announcement">
+   
+      <h2>تعلن إدارة المؤسسة الثانوية الإعدادية عبد العزيز أمين</h2>
+      <p>أنها ستنشر نتائج تلاميذ السنة الثالثة إعدادي برسم الموسم الدراسي 2022-2023</p>
+      <p>.على هذا الموقع حين توصلها بها</p>
+      <p> .ملاحظة: ستنشر نتائج الناجحين حسب <strong>أرقام الإمتحان الجهوي <strong/> </p>
+    </div>
+  </div>
+</header>
+
+<!-- Photo Grid -->
+<div id="photoGrid" style="margin-bottom:128px; display: block;">
+  <div class="w3-half">
+    <img src="https://scontent.frba2-1.fna.fbcdn.net/v/t1.6435-9/129852018_3282667315178541_4384843355312230891_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHCUPf85QXmoCsFFdLMSJFdI1pDVB1VoF0jWkNUHVWgXV2vuK8G60ZKvjVCUXSQxsCEBmboDZd6mk3_g3-4wzeX&_nc_ohc=7TbzN6fgvh0AX9kroUR&_nc_ht=scontent.frba2-1.fna&oh=00_AfDpzAshTbdtmhgWYzeVXgJT7KdqxQyb2puD85k_T7BeyQ&oe=64B71CFD" style="width:100%">
+
+  </div>
+
+  <div id="photoGrid" class="w3-half">
+    <img src="https://scontent.frba2-2.fna.fbcdn.net/v/t1.6435-9/91324155_2620637704714842_7868948396344606720_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHxFRLzeO7ASH2NZBFXnjEYbFFbXwaeoV9sUVtfBp6hX3RPNDlDDFd8XwiH9ZYUN6P6ZLnimC9Az-yK1TghI1u9&_nc_ohc=D97bvMwyRYUAX_F0uWq&_nc_ht=scontent.frba2-2.fna&oh=00_AfCE5axmr8kJzyZk7Ft7jMraJEZebT-5z22Tzfps9cL33Q&oe=64B736DF" style="width:100%">
+   
+  </div>
+
+  <div id="photoGrid" class="w3-center">
+  <img src="https://scontent.frba2-1.fna.fbcdn.net/v/t39.30808-6/347426132_1759974167750569_4066823721390592537_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF2kdhY5mO6o2lhNdfq41FDkY7ryNIAIqiRjuvI0gAiqF1ZI7nKOzWw76KBGiValF_cUhcAJ4wWjyLH_snaJvOW&_nc_ohc=-MMkYjtsmN4AX9UUQjm&_nc_ht=scontent.frba2-1.fna&oh=00_AfCI88oqHGYfSEtGecDJVW6V1aAQDVem5yqQuI_vhe12_Q&oe=6495810F"style="width:40%"> </div>
+  </div>
+  <!-- Photo Grid -->
+</div>
+  <div  id="resultsImage" style="width: 100%; height: 800px; display: none;">
+  <embed src="results.pdf" type="application/pdf" width="100%" height="100%">
+</div>
+
+</body>
+</html>
