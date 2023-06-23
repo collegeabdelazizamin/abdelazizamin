@@ -59,18 +59,20 @@ h1 {letter-spacing: 6px}
 <script>
 function showResultsImage() {
   // Hide the existing content
-
   document.getElementById("photoGrid").style.display = "none";
+  document.getElementById("announcement").style.display = "none"; // Hide the announcement div
   
   // Show the new image
   var resultsImage = document.getElementById("resultsImage");
   resultsImage.style.display = "block";
   window.scrollTo(0, 0);
 }
+
 function showHomePage() {
-  // Hide the resultsImage and show the pageContent
+  // Show the resultsImage and announcement div
   document.getElementById("resultsImage").style.display = "none";
   document.getElementById("photoGrid").style.display = "block";
+  document.getElementById("announcement").style.display = "block"; // Show the announcement div
   window.scrollTo(0, 0);
 }
 </script>
