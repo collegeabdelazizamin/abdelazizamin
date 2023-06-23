@@ -60,22 +60,26 @@ h1 {letter-spacing: 6px}
 function showResultsImage() {
   // Hide the existing content
   document.getElementById("photoGrid").style.display = "none";
-  document.getElementById("announcement").style.display = "none"; // Hide the announcement div
-  
+  document.getElementById("announcement_").style.display = "none"; // Hide the announcement div
+
   // Show the new image
-  var resultsImage = document.getElementById("resultsImage");
-  resultsImage.style.display = "block";
+  document.getElementById("resultsImage").style.display = "block";
   window.scrollTo(0, 0);
 }
 
 function showHomePage() {
-  // Show the resultsImage and announcement div
-  document.getElementById("resultsImage").style.display = "none";
+  // Show the photoGrid and announcement div
   document.getElementById("photoGrid").style.display = "block";
-  document.getElementById("announcement").style.display = "block"; // Show the announcement div
+  document.getElementById("announcement_").style.display = "block";
+
+  // Hide the resultsImage
+  document.getElementById("resultsImage").style.display = "none";
   window.scrollTo(0, 0);
 }
 </script>
+
+
+
 </head>
 <body>
 
@@ -91,7 +95,7 @@ function showHomePage() {
       <a href="#" class="w3-bar-item w3-button " onclick="showResultsImage()">النتائج</a>
       <a href="#" class="w3-bar-item w3-button w3-light-grey" onclick="showHomePage()">الصفحة الرئيسية</a>
     </div>
-    <div class="announcement">
+    <div class="announcement" id="announcement_">
    
       <h2>تعلن إدارة المؤسسة الثانوية الإعدادية عبد العزيز أمين</h2>
       <p>أنها ستنشر نتائج تلاميذ السنة الثالثة إعدادي برسم الموسم الدراسي 2022-2023</p>
